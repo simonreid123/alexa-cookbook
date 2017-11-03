@@ -60,10 +60,8 @@ function sayArray(myData, andor) {
             for (var i = 0; i < myData.length; i++) {
                 if (i < myData.length - 2) {
                     listString = listString + myData[i] + ', ';
-                    if (i = myData.length - 2) {
-                        listString = listString + myData[i] + ', ' + andor + ' ';
-                    }
-
+                } else if (i == myData.length - 2) {
+                    listString = listString + myData[i] + ', ' + andor + ' ';
                 } else {
                     listString = listString + myData[i];
                 }
